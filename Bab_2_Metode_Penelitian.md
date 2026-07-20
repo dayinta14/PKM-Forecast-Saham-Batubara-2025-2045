@@ -31,10 +31,10 @@ Dataset yang digunakan dalam penelitian ini berupa data harga saham harian penut
 
 | Ticker Saham | Nama Perusahaan | Rentang Data | Frekuensi | Sumber Data |
 | :--- | :--- | :--- | :--- | :--- |
-| **ADRO** | PT Adaro Energy Indonesia Tbk | 2010 – 2024 | Harian (*Daily*) | Yahoo Finance API (`yfinance`) |
-| **PTBA** | PT Bukit Asam Tbk | 2010 – 2024 | Harian (*Daily*) | Yahoo Finance API (`yfinance`) |
-| **INDY** | PT Indika Energy Tbk | 2010 – 2024 | Harian (*Daily*) | Yahoo Finance API (`yfinance`) |
-| **ITMG** | PT Indo Tambangraya Megah Tbk | 2010 – 2024 | Harian (*Daily*) | Yahoo Finance API (`yfinance`) |
+| **ADRO** | PT Adaro Energy Indonesia Tbk | 2014 – 2024 | Harian (*Daily*) | Yahoo Finance API (`yfinance`) |
+| **PTBA** | PT Bukit Asam Tbk | 2014 – 2024 | Harian (*Daily*) | Yahoo Finance API (`yfinance`) |
+| **INDY** | PT Indika Energy Tbk | 2014 – 2024 | Harian (*Daily*) | Yahoo Finance API (`yfinance`) |
+| **ITMG** | PT Indo Tambangraya Megah Tbk | 2014 – 2024 | Harian (*Daily*) | Yahoo Finance API (`yfinance`) |
 
 ### Karakteristik Data
 Data time-series historis ini mencakup periode dinamika ekonomi yang krusial, seperti krisis komoditas global, siklus *supercycle* harga energi, serta periode pasca-pandemi. Struktur data harian terdiri dari atribut: *Date, Open, High, Low, Close, Adj Close,* dan *Volume*. Atribut utama yang digunakan untuk pemodelan adalah **`Adj Close`**.
