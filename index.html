@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Forecast Harga Saham Batubara IDX &mdash; ARIMA 2025&ndash;2045</title>
+<title>Forecast Harga Saham Batubara IDX &mdash; Hybrid ARIMA-LSTM 2025&ndash;2045</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet"/>
@@ -111,11 +111,11 @@ canvas{width:100%!important}
 <div class="topbar">
   <div class="topbar-inner">
     <div class="brand">
-      <h1>Forecast Harga Saham Batubara IDX &mdash; ARIMA 2025&ndash;2045</h1>
-      <p>ADRO &bull; PTBA &bull; INDY &bull; ITMG &nbsp;|&nbsp; Rolling Forecast dengan Simulasi Volatilitas</p>
+      <h1>Forecast Harga Saham Batubara IDX &mdash; Hybrid ARIMA-LSTM 2025&ndash;2045</h1>
+      <p>ADRO &bull; PTBA &bull; INDY &bull; ITMG &nbsp;|&nbsp; Proyeksi Pemodelan Statistik Linear & Jaringan Saraf Non-Linear</p>
     </div>
     <div class="badges">
-      <span class="badge badge-blue">Model: ARIMA</span>
+      <span class="badge badge-blue">Model: Hybrid ARIMA-LSTM</span>
       <span class="badge badge-green">Train 80% / Test 20%</span>
       <span id="gen-time"></span>
     </div>
@@ -128,7 +128,7 @@ canvas{width:100%!important}
   <div class="tabs" id="tabs"></div>
 
   <!-- ACCURACY -->
-  <div class="section-title">Akurasi Model (Evaluasi pada Data Testing)</div>
+  <div class="section-title">Akurasi Model Hybrid ARIMA-LSTM (Evaluasi pada Data Testing)</div>
   <div class="acc-row" id="acc-row"></div>
 
   <!-- TRAIN TEST CHART -->
@@ -163,7 +163,7 @@ canvas{width:100%!important}
       <div class="card-title" style="margin-bottom:14px">Tabel Data Test</div>
       <div class="tbl-wrap">
         <table>
-          <thead><tr><th>Tanggal</th><th>Aktual</th><th>Prediksi</th><th>Selisih (IDR)</th><th>Error (%)</th></tr></thead>
+          <thead><tr><th>Tanggal</th><th>Aktual</th><th>Prediksi Hybrid</th><th>Selisih (IDR)</th><th>Error (%)</th></tr></thead>
           <tbody id="tbl-test-body"></tbody>
         </table>
       </div>
@@ -174,7 +174,7 @@ canvas{width:100%!important}
     <div class="card-header">
       <div>
         <div class="card-title" id="ct2">Forecast Harga 2025&ndash;2045</div>
-        <div class="card-sub">Simulasi rolling ARIMA dengan volatilitas realistis</div>
+        <div class="card-sub">Simulasi Hybrid ARIMA-LSTM dengan kurva proyeksi dinamis</div>
       </div>
       <div>
         <div class="rbg">
@@ -190,7 +190,7 @@ canvas{width:100%!important}
   <!-- GRID BAWAH -->
   <div class="grid2">
     <div class="card" style="margin-bottom:0">
-      <div class="card-title" style="margin-bottom:14px">Perbandingan Prediksi vs Aktual (Test Set)</div>
+      <div class="card-title" style="margin-bottom:14px">Perbandingan Prediksi Hybrid vs Aktual (Test Set)</div>
       <canvas id="chart-cmp-tt" height="140"></canvas>
     </div>
     <div class="card" style="margin-bottom:0">
@@ -212,7 +212,7 @@ canvas{width:100%!important}
 </main>
 
 <footer>
-  Sumber Data: Yahoo Finance &nbsp;|&nbsp; Model: ARIMA &nbsp;|&nbsp; Periode Historis: 2005&ndash;2024 &nbsp;|&nbsp; Forecast: Jan 2025&ndash;Des 2045 &nbsp;|&nbsp; Penelitian FMIPA &mdash; Dayinta Agustina Zanuel
+  Sumber Data: Yahoo Finance &nbsp;|&nbsp; Model: Hybrid ARIMA-LSTM &nbsp;|&nbsp; Periode Historis: 2004&ndash;2024 &nbsp;|&nbsp; Forecast: Jan 2025&ndash;Des 2045 &nbsp;|&nbsp; Penelitian FMIPA &mdash; Dayinta Agustina Zanuel
 </footer>
 
 <script>
